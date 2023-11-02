@@ -1,0 +1,2 @@
+(//table[@class='table table-bordered table-striped']/tbody/tr/td)/div/div/div/input"
+ List<WebElement>  moduleManagerModuleName= driver.findElements(By.xpath("(//table[@class='table table-bordered table-striped']/tbody/tr/td)/div/div[3]"));

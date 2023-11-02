@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-11-02T13:23:48 IST" name="Default suite" finished-at="2023-11-02T13:24:58 IST" duration-ms="69761">
+    <groups>
+    </groups>
+    <test started-at="2023-11-02T13:23:48 IST" name="Default test" finished-at="2023-11-02T13:24:58 IST" duration-ms="69761">
+      <class name="logic_Jump_Test.Logic_Jump_Test">
+        <test-method is-config="true" signature="startReport()[pri:0, instance:logic_Jump_Test.Logic_Jump_Test@7dfb0c0f]" started-at="2023-11-02T13:23:48 IST" name="startReport" finished-at="2023-11-02T13:23:48 IST" duration-ms="611" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startReport -->
+        <test-method is-config="true" signature="setValues()[pri:0, instance:logic_Jump_Test.Logic_Jump_Test@7dfb0c0f]" started-at="2023-11-02T13:23:48 IST" name="setValues" finished-at="2023-11-02T13:23:48 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setValues -->
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:logic_Jump_Test.Logic_Jump_Test@7dfb0c0f]" started-at="2023-11-02T13:23:48 IST" name="setUpClass" finished-at="2023-11-02T13:23:49 IST" duration-ms="355" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@3a3b10f4]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method is-config="true" signature="report()[pri:0, instance:logic_Jump_Test.Logic_Jump_Test@7dfb0c0f]" started-at="2023-11-02T13:23:49 IST" name="report" finished-at="2023-11-02T13:23:49 IST" duration-ms="17" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- report -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:logic_Jump_Test.Logic_Jump_Test@7dfb0c0f]" started-at="2023-11-02T13:23:49 IST" name="beforeMethod" finished-at="2023-11-02T13:23:54 IST" duration-ms="5306" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="run()[pri:0, instance:logic_Jump_Test.Logic_Jump_Test@7dfb0c0f]" started-at="2023-11-02T13:23:54 IST" name="run" finished-at="2023-11-02T13:24:58 IST" duration-ms="63982" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- run -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:logic_Jump_Test.Logic_Jump_Test@7dfb0c0f]" started-at="2023-11-02T13:24:58 IST" name="afterMethod" finished-at="2023-11-02T13:24:58 IST" duration-ms="16" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:logic_Jump_Test.Logic_Jump_Test@7dfb0c0f]" started-at="2023-11-02T13:24:58 IST" name="tearDownClass" finished-at="2023-11-02T13:24:58 IST" duration-ms="19" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+        <test-method is-config="true" signature="stopReport()[pri:0, instance:logic_Jump_Test.Logic_Jump_Test@7dfb0c0f]" started-at="2023-11-02T13:24:58 IST" name="stopReport" finished-at="2023-11-02T13:24:59 IST" duration-ms="1182" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stopReport -->
+      </class> <!-- logic_Jump_Test.Logic_Jump_Test -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
