@@ -1,23 +1,29 @@
 package logic_Jump;
 
+import java.awt.Toolkit;
+import java.awt.Window;
+import java.awt.datatransfer.Clipboard;
+import java.awt.datatransfer.DataFlavor;
+import java.awt.datatransfer.UnsupportedFlavorException;
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.net.URL;
 import java.time.Duration;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Properties;
+import java.util.Set;
 
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WindowType;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.aventstack.extentreports.ExtentTest;
@@ -42,7 +48,7 @@ public class Logic_Jump extends UI_Type_Default_Content_Checking{
     
     Actions act = new Actions(driver);
     
-    public void ma() throws InterruptedException, IOException {
+    public void ma() throws InterruptedException, IOException, UnsupportedFlavorException {
         
         if(Environment.equalsIgnoreCase("Live")) {
             navigateto(StageURL);
@@ -75,9 +81,30 @@ public class Logic_Jump extends UI_Type_Default_Content_Checking{
 //        for (int i = 0; i < lis.size(); i++) {
 //            scriptCreation(lis.get(0));
 //            skipLogic_Setup(lis.get(0));
-            
-            first_Element_Remove(lis.get(1));
+//            refresh();
+//            
+//            first_Element_Remove(lis.get(1));
 //        }
+        publish.click(); publish_New_Bot.click(); publish_Confirm.click();
+        
+        publish.click(); copy_URL.click(); publish_Confirm.click(); urlCopied.click();
+        
+        driver.switchTo().newWindow(WindowType.TAB);
+        
+        Toolkit toolkit = Toolkit.getDefaultToolkit();
+        Clipboard clipboard = toolkit.getSystemClipboard();
+        String formURL = (String) clipboard.getData(DataFlavor.stringFlavor);
+        System.out.println(formURL);
+        driver.navigate().to(formURL);
+        
+        Set<String> wh = driver.getWindowHandles();
+        System.out.println("Totla Tab Size: "+wh.size());
+        
+        ArrayList<String> arrLis = new ArrayList<String>(wh);
+        
+        String applicationTab = arrLis.get(0);
+        String formTab = arrLis.get(1);
+        
         
         
     }

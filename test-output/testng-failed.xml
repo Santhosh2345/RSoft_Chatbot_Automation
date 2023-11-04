@@ -3,19 +3,19 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="logic_Jump_Test.Logic_Jump_Test">
+      <class name="form_UIType.All_UI_Types_In_Form_Test">
         <methods>
           <include name="setUpClass"/>
-          <include name="afterMethod"/>
           <include name="run"/>
+          <include name="afterMethod"/>
           <include name="tearDownClass"/>
-          <include name="stopReport"/>
           <include name="setValues"/>
+          <include name="stopReport"/>
           <include name="report"/>
           <include name="beforeMethod"/>
           <include name="startReport"/>
         </methods>
-      </class> <!-- logic_Jump_Test.Logic_Jump_Test -->
+      </class> <!-- form_UIType.All_UI_Types_In_Form_Test -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

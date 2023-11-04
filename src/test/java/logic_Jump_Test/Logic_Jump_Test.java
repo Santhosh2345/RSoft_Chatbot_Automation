@@ -1,5 +1,6 @@
 package logic_Jump_Test;
 
+import java.awt.datatransfer.UnsupportedFlavorException;
 import java.io.FileInputStream;
 
 import java.io.IOException;
@@ -20,7 +21,7 @@ public class Logic_Jump_Test extends ProjectSpecificMethods{
     }
 
     @Test
-    private void run() throws InterruptedException, IOException {
+    private void run() throws InterruptedException, IOException, UnsupportedFlavorException {
         node = test.createNode("Chatbot - 1");
         extent.attachReporter(spark);
         Logic_Jump a = new Logic_Jump(driver, node, prop, Environment, StageURL, Stage1URL);

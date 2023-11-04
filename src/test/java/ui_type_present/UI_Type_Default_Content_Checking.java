@@ -49,6 +49,21 @@ public class UI_Type_Default_Content_Checking extends ProjectSpecificMethods{
         @FindBy(xpath = "//button[text()='Create']")
         public WebElement buildCreate_Button;
         
+        @FindBy(id = "publish")
+        public WebElement publish;
+        
+        @FindBy(xpath = "//input[@name='swal2-radio' and @value='2']")
+        public WebElement publish_New_Bot;
+        
+        @FindBy(xpath = "//input[@name='swal2-radio' and @value='1']")
+        public WebElement copy_URL;
+        
+        @FindBy(xpath = "//button[text()='OK']")
+        public WebElement urlCopied;
+        
+        @FindBy(xpath = "//button[text()='Yes, Publish it..!']")
+        public WebElement publish_Confirm;
+        
         public WebElement buildPath(String buildName) {
             return  driver.findElement(By.xpath("//div[text()='"+buildName+" ']"));
         }
@@ -153,5 +168,25 @@ public class UI_Type_Default_Content_Checking extends ProjectSpecificMethods{
         
         @FindBy(xpath = "//button[text()='Done']")
         public WebElement skipDoneButton;
+        
+        @FindBy(xpath = "//button[text()='next']")
+        public WebElement formNext;
+        
+        @FindBy(xpath = "//button/span")
+        public WebElement formMessNext;
+        
+        public void formNext() {
+            try {
+                formNext.click();
+            }catch(Exception e) {
+                try {
+                    formMessNext.click();
+                }catch(Exception a) {
+                    System.err.println("Unable to Click Next");
+                    System.exit(1);
+                }
+            }
+        }
+        
         
 }

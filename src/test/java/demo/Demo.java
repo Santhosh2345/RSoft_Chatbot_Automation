@@ -1,14 +1,8 @@
 package demo;
 
-import java.util.Arrays;
 import java.util.Random;
 
-import org.openqa.selenium.WebDriver;
-
-import org.openqa.selenium.chrome.ChromeDriver;
-
 import projectSpecific.base.ProjectSpecificMethods;
-
 
 public class Demo extends ProjectSpecificMethods {
     
